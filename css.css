@@ -1,0 +1,145 @@
+img{
+    width: 25px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+    
+}
+html{
+    height: 100%;
+}
+body{
+    width: 100%;
+    background: linear-gradient(to bottom ,#68EACC 0%, #497BE8 10%);
+    background-repeat: no-repeat;
+    
+}
+.wrapper{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+ul{
+
+    overflow-y: auto;
+    height: 300px;
+  
+}
+
+li{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 10fr 3fr 1fr;  
+    font-size: 20px;
+    border: 2px solid;
+    padding: 2px 2px 2px 2px;
+    margin: 2px 2px 2px 2px; 
+    cursor: pointer;
+   
+}
+li input{
+    height: 30px;
+    width: 30px;
+    display: flex;
+}
+li i{
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+
+   
+    
+}
+li i{
+    visibility: hidden;
+    margin-left: -50px;
+    width: 35px;
+}
+.aboutLi.checked{
+    transition: all 3s ease;
+    background-color: rgb(60, 70, 51);
+}
+li:hover i{
+    visibility: visible;
+    transition: all 1s ease;
+    background-color: brown;
+    width: 80px;
+    margin-right: 0px;
+    
+}
+header{
+    font-size: 60px;
+}
+.inputField input{
+    width: 500px;
+    height: 32px;
+    display: flex;
+    text-align: center;
+}
+.inputField button{
+    background-color: aquamarine;
+    opacity: 0.4;
+    width: 80px;
+    
+}
+.inputField:hover button{
+    opacity: 100%;
+    width: 80px;
+    background-color: aqua;
+    transition: all 0.5s ease;
+}
+.inputField{
+    display: flex;
+    justify-content: center;
+}
+.footer button{
+    width: 110px;
+    background-color: #68EACC;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: bolder;
+}
+.aboutLi.delition {
+    animation: opacity 1s ease-in-out;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer button:hover{
+    background-color: blueviolet;
+    transition: all 1s ease;
+}
+.footer span{
+    font-size: large;
+}
+.footer img{
+    visibility: hidden;
+}
+.footer button:hover img{
+    visibility: visible;
+    transition: all 5s;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.red{
+    background-color: darkgoldenrod;
+}

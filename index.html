@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css.css" />
+        <title>todolist 4</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>Todo App</header>
+            <div class="inputField">
+                <input
+                    id="description-task"
+                    type="text"
+                    placeholder="Add your new todo"
+                />
+                <button id="add-task-btn">
+                    <img src="./icon/add.png" alt="" />
+                </button>
+            </div>
+            <div>
+                <ul class="todoList">
+                </ul>
+            </div>
+            <div class="footer">
+                <span
+                    >You have <span class="pendingNumb"></span>pending
+                    tasks</span
+                >
+                <button id="clear">
+                    Clear All <img src="./icon/litter.png" alt="" />
+                </button>
+            </div>
+            <button id="donaDo">Selected All</button>
+            <button id="reCall">Return</button>
+            <!-- <div>
+                <button>Delete task</button>
+                <input type="text" placeholder="task name">
+            </div> -->
+            
+        </div>
+        <script src="./javascript.js"></script>
+    </body>
+</html>
